@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	body{
+		margin: 0px;
+
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+	.gamelist {
+		width: 730px;
+		height: 405px;
+		margin: 50px auto;
+		background-color: pink;
+	}
+	ul {
+		padding:0px;
+		margin: 0px;
+		list-style: none;
+	}
+	.links {
+		height: 405px;
+
+	}
+	.list {
+		margin: 0 10px 10px 0;
+		float: left;
+		width: 360px;
+		height: 125px;
+		background-color: #096;
+		background:url("./img/p1.png") no-repeat;
+		overflow: hidden;
+		border-radius: 10px;
+	}
+	.list:nth-child(2) {
+		background:url("./img/p2.png") no-repeat;
+		
+	}
+	.list:nth-child(3) {
+		background:url("./img/p3.png") no-repeat;
+	}
+	.list:nth-child(4) {
+		background:url("./img/p4.png") no-repeat;
+		
+	}
+	.list:nth-child(5) {
+		background:url("./img/p5.png") no-repeat;
+	}
+	.list:nth-child(6) {
+		background:url("./img/p6.png") no-repeat;
+
+	}
+	/* 选中偶数项 */
+	.list:nth-child(even){
+		margin-right: 0px;
+	}
+
+	.list-left {
+		float: left;
+		width: 240px;
+		height: 125px;
+		background-color: #1c2d39;
+		background: url("./img/p1.png") no-repeat;
+		border-radius: 10px 0 0 10px; 
+		transform: translateX(-240px);
+		transition: 2s;
+	}
+	
+	.list-right {
+		float: left;
+		width: 120px;
+		height: 125px;
+		background-color: #4e9ed5;
+		transform: translateX(120px);
+		transition: 2s;
+		border-radius: 0px 10px 10px 0px; 
+	}
+	.list-right .text {
+		display: block;
+		width: 80px;
+		height: 28px;
+		background-color: #4e9ed5;
+		font-size: 14px;
+		text-align: center;
+		line-height: 28px;
+		border-radius: 5px;
+
+	}
+	
+	.text:nth-child(1) {
+		margin: 32px 20px 5px 20px;
+		
+		background-color: #d4af46;
+	}
+	.text:nth-child(2) {
+		margin: 0px 20px 0px 20px;
+		
+		border: 1px solid lightblue; 
+	}
+	.list:hover .list-left{
+		transform: translateX(0px);
+
+	}
+	.list:hover .list-right {
+		transform: translateX(0px);
+	}
+
+</style>
+<body>
+	<div class="gamelist">
+		<ul class="links">
+			<li class="list">
+				<div class="list-left">
+					
+				</div>
+				<div class="list-right">
+					<a href="#" class="text">开始游戏</a>
+					<a href="#" class="text">进入官网</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="list-left">
+					
+				</div>
+				<div class="list-right">
+					<a href="#" class="text">开始游戏</a>
+					<a href="#" class="text">进入官网</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="list-left">
+					
+				</div>
+				<div class="list-right">
+					<a href="#" class="text">开始游戏</a>
+					<a href="#" class="text">进入官网</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="list-left">
+					
+				</div>
+				<div class="list-right">
+					<a href="#" class="text">开始游戏</a>
+					<a href="#" class="text">进入官网</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="list-left">
+					
+				</div>
+				<div class="list-right">
+					<a href="#" class="text">开始游戏</a>
+					<a href="#" class="text">进入官网</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="list-left">
+					
+				</div>
+				<div class="list-right">
+					<a href="#" class="text">开始游戏</a>
+					<a href="#" class="text">进入官网</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
